@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+:root{
+  --primary_color:#2B3747;
+  --secondary_color:#3C1B74;
+  --tertiary_color: #932432;
+  --quart_color: #DE354C;
+  --lightest:#F3F3F3;
+}
+body {
+  font-family: "Mukta", sans-serif;
+  background-color: var(--lightest);
+  padding: 5%;
+}
+input {
+  width: 100%;
+  height: 3vh;
+  padding: 2%;
+  margin-right: 2%;
+  outline: var(--tertiary_color);
+}
+input:active, :focus{
+  outline:  var(--tertiary_color);
+}
+button {
+  width: 17vh;
+  text-transform: uppercase;
+  background-color: transparent;
+  border: 1px solid var(--tertiary_color);
+  background-color: var(--tertiary_color);
+  color: var(--lightest);
+}
+button:hover {
+  cursor: pointer;
+}
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.headline {
+  font-size: 444%;
+  font-weight: 600;
+  letter-spacing: 3px;
+  color: var(--secondary_color);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.desc {
+  padding-bottom: 2%;
+  color: var(--primary_color);
+  font-weight: 700;
+  font-size: 110%;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+#results {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.card {
+  display: flex;
+  flex-direction: row;
+  height: auto;
+  margin-bottom: 2%;
+  margin-top: 2%;
+  border: .5px solid var(--primary_color);
+  border-radius: 3px;
+  color: var(--primary_color);
+  text-decoration: none;
+  width: 100%;
+}
+.textBox {
+  margin-left: 2%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-evenly;
+}
+.img {
+  height: auto;
+  width: auto;
+  border-radius: 3px;
+}
+.title {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding-bottom: 1%;
+  font-size: 210%;
+  font-weight: 300;
+  color:var(--secondary_color);
+}
+.summary {
+  font-weight: 500;
+  font-size: 120%;
+  padding-bottom: 1%;
+}
+.link {
+  font-size: 110%;
+  font-weight: 700;
+  color: var(--quart_color);
+}
